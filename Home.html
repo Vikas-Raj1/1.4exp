@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>onclick</title>
+</head>
+<style>
+
+.container{
+    height: 100%;
+    width:  90%;
+    border: 2px solid black;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+h1 {
+height: 3rem; text-align: center;
+
+}
+table {
+
+width: 70%; 
+
+text-align: center; line-height: 4rem;
+margin-left: 15rem;
+}
+th{
+font-size: 2rem; font-weight: 600;
+}
+td{
+font-size: 1.5rem;
+ }
+.emp {
+width: 49%;
+height: 2rem; font-size: 1.2rem;
+}
+button {
+width: 49%;
+height: 3.6rem; font-size: 1.2rem;
+}
+
+button:hover{
+background: rgb(21, 128, 221);
+}
+
+img{
+    height: 120px;
+    width: 120px;
+}
+.logo{
+    height: 10px;
+    width: 120px;
+
+    text-align: center;
+    align-items: center;
+}
+</style>
+
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="https://1000logos.net/wp-content/uploads/2021/04/Accenture-logo.png" alt="">
+    </div>
+   
+<h1>Employe Salary Sheet</h1>
+<table border="2">
+<tbody>
+<tr>
+<th>Name</th>
+<th>Emp_Id</th>
+<th>City</th>
+<th>State</th>
+<th>Job Titles</th>
+<th>Salary</th>
+
+</tr>
+<tr>
+<td>vikas</td>
+<td>com@20587</td>
+<td>Purnea</td>
+<td>Bihar</td>
+<td>DIRECTOR</td>
+
+<td>
+<input type="text" id="emp1" class="emp" />
+
+</td>
+</tr>
+<tr>
+<td>Annu</td>
+<td>com@20592</td>
+<td>Mohali</td>
+<td>Punjab</td>
+<td>MANAGER</td>
+<td>
+<input type="text" id="emp2" class="emp"/>
+ 
+
+</td>
+</tr>
+<tr>
+<td>Sweety</td>
+<td>com@22365</td>
+<td>Kharar</td>
+<td>Amritsar</td>
+<td>HR</td>
+<td>    
+<input type="text" id="emp3" class="emp"/>
+
+</td>
+</tr>
+<tr>
+<td>Dimple</td>
+<td>com@20154</td>
+<td>Amritsar</td>
+<td>Punjab</td>
+<td>SUPERVISOR</td>
+<td>
+<input type="text" id="emp4" class="emp"/>
+
+</td>
+</tr>
+<tr>
+<td>Mike</td>
+<td>com@20525</td>
+<td>Kanpur</td>
+<td>Utter pradesh</td>
+<td>OPERATOR</td>
+<td>
+<input type="text" id="emp5" class="emp"/>
+<button onclick="show1()">check-salary</button>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<script>
+let data1 = 145000; let data2 = 100000; let data3 = 70000; let data4 = 55000; let data5 = 35000;
+let emp = document.querySelector(".emp");
+function show1() {
+if (emp.value != data1) {
+
+document.getElementById("emp1").value = data1;
+document.getElementById("emp2").value = data2;
+document.getElementById("emp3").value = data3;
+document.getElementById("emp4").value = data4;
+document.getElementById("emp5").value = data5;
+
+} else {
+
+document.getElementById("emp1").value = " ";
+document.getElementById("emp2").value = " ";
+document.getElementById("emp3").value = " ";
+document.getElementById("emp4").value = " ";
+document.getElementById("emp5").value = " ";
+
+}
+
+}
+
+
+</script>
+</body>
+</html>
